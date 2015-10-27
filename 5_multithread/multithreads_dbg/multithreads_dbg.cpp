@@ -24,6 +24,7 @@ int fibonacci(int value)
 
 void threads()
 {
+#if 0
 	auto param = []() {
 		
 		std::random_device rd;
@@ -39,6 +40,7 @@ void threads()
 
 		std::cout << "thread: " << std::this_thread::get_id() << " done..." << std::endl;
 	};
+#endif
 
 	// https://think-async.com/Asio/TipsAndTricks
 
@@ -63,9 +65,16 @@ void threads()
 
 int wmain()
 {
-	//threads();
+	threads();
 
-	fibonacci(50);
+	auto ret = fibonacci(10);
+
+	//for (int i = 0; i < 10; i++)
+	//{
+	//	auto ret = fibonacci(i);
+
+	//	std::wcout << ret << L" ";
+	//}
 
 	// Print each value from 1 to 5 in parallel.
 	//parallel_for(1, 6, [](int value) {

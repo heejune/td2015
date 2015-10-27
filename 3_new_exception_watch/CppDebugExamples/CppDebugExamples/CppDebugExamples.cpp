@@ -12,11 +12,11 @@ extern void natvisdemo();
 
 int main()
 {
-	//make_exception();
+	make_exception();
 
 	specific_into();
 
-	//eval_test();
+	eval_test();
 
 	//show_vars();
 

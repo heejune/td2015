@@ -90,7 +90,7 @@ void do_wordcount(std::vector<std::string> files)
 #include <ostream>
 #include <regex>
 
-void do_wordcount_slow(std::vector<std::string> files)
+void do_wordcount_slow(std::vector<std::string> files, bool show)
 {
 	const std::regex word_regex("\\w+");
 
@@ -114,7 +114,9 @@ void do_wordcount_slow(std::vector<std::string> files)
 
 	std::cout << word_freq.size() << " unique words." << std::endl;
 
-	for (const auto& p : word_freq) {
-		std::cout << p.first << ": " << p.second << std::endl;
+	if (show) {
+		for (const auto& p : word_freq) {
+			std::cout << p.first << ": " << p.second << std::endl;
+		}
 	}
 }

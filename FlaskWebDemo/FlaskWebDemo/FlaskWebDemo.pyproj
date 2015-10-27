@@ -18,8 +18,8 @@
     <PythonWsgiHandler>$(MSBuildProjectName).app</PythonWsgiHandler>
     <Name>FlaskWebDemo</Name>
     <RootNamespace>FlaskWebDemo</RootNamespace>
-    <InterpreterId>{fc86c24a-9d2d-4fd0-9a73-ed4355f72d94}</InterpreterId>
-    <InterpreterVersion>3.4</InterpreterVersion>
+    <InterpreterId>{bc7abf58-0e8e-4a1f-a345-97941e6d03c0}</InterpreterId>
+    <InterpreterVersion>3.5</InterpreterVersion>
     <Environment>
     </Environment>
     <WebBrowserPort>5555</WebBrowserPort>
@@ -79,10 +79,10 @@
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
-      <Id>{fc86c24a-9d2d-4fd0-9a73-ed4355f72d94}</Id>
+      <Id>{bc7abf58-0e8e-4a1f-a345-97941e6d03c0}</Id>
       <BaseInterpreter>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</BaseInterpreter>
-      <Version>3.4</Version>
-      <Description>env (Python 64-bit 3.4)</Description>
+      <Version>3.5</Version>
+      <Description>env (Python 64-bit 3.5)</Description>
       <InterpreterPath>Scripts\python.exe</InterpreterPath>
       <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
       <LibraryPath>Lib\</LibraryPath>
